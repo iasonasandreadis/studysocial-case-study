@@ -42,6 +42,9 @@ a{color:var(--accent);text-underline-offset:3px}
 h1{font:800 clamp(2.5rem,7.4vw,5.6rem)/.95 var(--display);letter-spacing:-.035em;margin:0;max-width:15ch}
 h1 em{font-style:normal;color:var(--accent)}
 .lede{font-size:1.3rem;line-height:1.5;max-width:40ch;margin:28px 0 0;color:#2b2925}
+.visit{display:inline-block;margin-top:28px;padding:14px 22px;background:var(--accent);color:#fff;font:700 1rem/1 var(--display);text-decoration:none;border-radius:999px}
+.visit:hover{background:var(--ink)}
+.visit:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
 .hero-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:48px;border-top:1px solid var(--line)}
 .hero-facts div{padding:18px 18px 0 0}
 .hero-facts div+div{padding-left:18px;border-left:1px solid var(--line)}
@@ -144,6 +147,7 @@ footer p{margin:0 0 .6em;max-width:80ch}
     <p class="kicker">A social study app for Greek high-school students</p>
     <h1>50 students at my school signed up in <em>12 days.</em></h1>
     <p class="lede">StudySocial is a phone app where students time their study sessions, see when friends are studying, and share photos of their study days. I built it with AI coding agents and ran a beta at my school in October 2026.</p>
+    <a class="visit" href="https://studysocial.gr">Visit studysocial.gr &rarr;</a>
     <div class="hero-facts">
       <div><strong>50</strong><span>accounts, 3–14 Oct 2026</span></div>
       <div><strong>81 h</strong><span>of study logged with the timer</span></div>
@@ -284,6 +288,7 @@ footer p{margin:0 0 .6em;max-width:80ch}
       <li><time>12 Oct</time><span>Decided manual timing was the main problem.</span></li>
       <li><time>14 Oct</time><span>Shipped the one-tap start card and logging after the fact. Last new sign-up.</span></li>
       <li class="mark"><time>15 Oct</time><span>End of the beta. Last activity.</span></li>
+      <li><time>11 Nov</time><span>studysocial.gr back online.</span></li>
     </ol>
   </div>
 </section>
@@ -326,6 +331,7 @@ footer p{margin:0 0 .6em;max-width:80ch}
 
 <footer>
   <div class="wrap">
+    <p>App: <a href="https://studysocial.gr">studysocial.gr</a></p>
     <p>Sources: the app's database (counted 11 Nov 2026), its code history, the hosting dashboard, and my own messages from the time. User counts include my own account. No user data is shown, and the screenshots use example data.</p>
   </div>
 </footer>
