@@ -8,8 +8,8 @@ permissions:
   pages: write
   id-token: write
 concurrency:
-  group: case-study-pages
-  cancel-in-progress: true
+  group: studysocial-pages
+  cancel-in-progress: false
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -19,8 +19,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+      - name: Collect the published site
+        run: |
+          mkdir -p _site
+          cp index.html _site/index.html
+          cp -a img _site/img
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
       - id: deployment
         uses: actions/deploy-pages@v4
